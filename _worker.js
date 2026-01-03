@@ -1,5 +1,4 @@
 // blog_worker.js
-
 // 博客的所有文章数据
 const blogPosts = [
   {
@@ -32,7 +31,7 @@ const blogPosts = [
     `
   },
   {
-    id: 4,
+    id: 3,
     title: "祝你2026快乐",
     date: "2026-01-01",
     content: `
@@ -48,7 +47,7 @@ const blogPosts = [
     `
   },
   {
-    id: 5,
+    id: 4,
     title: "为人寻偶",
     date: "2026-01-02",
     content: `
@@ -58,40 +57,40 @@ const blogPosts = [
     `
   },
   {
-    id: 6,
+    id: 5,
     title: "崇拜希特勒的**",
     date: "2026-01-03",
     content: `
       <h2>崇拜希特勒的**</h2>
-
       <h3>1. 崇拜希特勒原因</h3>
       <p><strong>网络：</strong></p>
       <p>
-        崇拜的主要原因是网络上一些 ** 营销号和历史虚无主义者，
-        通过碎片化和所谓“美学包装”的方式歪曲历史事实，
-        对纳粹罪行进行淡化甚至洗白。
+        崇拜的大多原因一群人崇拜希特勒，纳粹的主要出处，极大多都是靠着网络一些**营销号和一些**历史虚无主义者的**语录，
+        靠着碎片化和美学包装的方式提出部分做法（屠杀犹太人），**好奇了**，
+        和苏联瓜分波兰，给丹麦，法国吞了，和日本结盟，这**怎么说**？
+        网络还能蹦出一些**离谱谣言**（希特勒不攻击中国出于对中国喜爱）
+        这**是人说出来的**？
       </p>
-
-      <h3>2. 这类人的表现</h3>
-      <p><strong>班级中</strong></p>
+      <h3>2. 这群猴子的表现</h3>
+      <p><strong>班级里</strong></p>
       <p>
-        1. 敬不当手势<br>
-        2. 高喊极端人物名字<br>
-        3. 盲目鼓吹极端思想<br>
-        4. 不允许任何质疑声音
+        1. 敬纳粹礼<br>
+        2. 高喊希特勒名字<br>
+        3. 鼓吹希特勒<br>
+        4. 谈到希特勒就真把这当领袖了，不允许任何人“侮辱”
       </p>
-
-      <p><strong>特殊时间与场所的行为</strong></p>
+      <p><strong>一些特殊时间与场所做的事情</strong></p>
       <p>
-        在纪念反法西斯的重要日子里，
-        仍有人佩戴不当标志并进行挑衅行为，
-        对历史与现实都缺乏基本尊重。
+        9.3阅兵在抗日战争暨世界反法西斯纪念日举行，8.20班能有****，****，
+        **的**带个十字勋章，下课在那班外站着，刻意露出，遇到人就可以讲解，
+        还敬他***礼，我只能来评价: **玩意，
+        希特勒是你老*啊，*你老*的
       </p>
     `
   }
 ];
 
-// 生成完整 HTML
+// 生成完整HTML
 function generateHTML(title, bodyContent) {
   return `
 <!DOCTYPE html>
@@ -101,11 +100,10 @@ function generateHTML(title, bodyContent) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${title} | 我的个人博客</title>
 <style>
-body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px; }
-.post-item { border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 10px; }
-.post-title { font-size: 1.5rem; color: #2563eb; text-decoration: none; }
-.back-link { display: inline-block; margin-top: 20px; }
-#comments { margin-top: 40px; }
+body{font-family:sans-serif;max-width:800px;margin:auto;padding:20px}
+.post-item{border:1px solid #ddd;padding:20px;margin-bottom:20px;border-radius:10px}
+.post-title{font-size:1.5rem;color:#2563eb;text-decoration:none}
+.back-link{display:inline-block;margin-top:20px}
 </style>
 </head>
 <body>
@@ -141,7 +139,7 @@ function generateHomePage() {
   return generateHTML("首页", list);
 }
 
-// 单篇文章页（已插入 Giscus）
+// 单篇文章（增加 Giscus 评论）
 function generatePostPage(id) {
   const post = blogPosts.find(p => p.id === id);
   if (!post) {
@@ -153,29 +151,28 @@ function generatePostPage(id) {
     `<article class="post-item">
       <h2>${post.title}</h2>
       <div>${post.date}</div>
-
       ${post.content}
-
-      <!-- 评论区 -->
-      <div id="comments"></div>
-
       <a class="back-link" href="/">← 返回首页</a>
     </article>
 
-    <!-- Giscus 评论系统 -->
-    <script src="https://giscus.app/client.js"
-      data-repo="你的GitHub用户名/你的仓库名"
-      data-repo-id="你的REPO_ID"
-      data-category="General"
-      data-category-id="你的CATEGORY_ID"
-      data-mapping="pathname"
-      data-reactions-enabled="1"
-      data-input-position="bottom"
-      data-theme="light"
-      data-lang="zh-CN"
-      crossorigin="anonymous"
-      async>
-    </script>
+    <!-- 评论区 -->
+    <div style="margin-top:3rem;">
+      <script src="https://giscus.app/client.js"
+        data-repo="zuqiu2024/jack"
+        data-repo-id="R_kgDOQy0W2A"
+        data-category="General"
+        data-category-id="DIC_kwDOQy0W2M4C0ha1"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>
     `
   );
 }
