@@ -2,16 +2,6 @@
 // 博客的所有文章数据
 const blogPosts = [
   {
-    id: 1,
-    title: "我的第一篇博客",
-    date: "2025-12-30",
-    content: `
-      <p>这是我的第一篇博客文章，用于测试整个博客系统是否工作正常。</p>
-      <p>Cloudflare Worker 的强大之处在于，它允许我们用纯 JavaScript 动态生成整个网站，无需复杂的服务器环境。</p>
-      <p>如果你看到了这篇文章，说明你的个人博客已经成功运行！</p>
-    `
-  },
-  {
     id: 2,
     title: "201八人集体介绍",
     date: "2025-12-31",
@@ -65,32 +55,28 @@ const blogPosts = [
       <h3>1. 崇拜希特勒原因</h3>
       <p><strong>网络：</strong></p>
       <p>
-        崇拜的大多原因一群人崇拜希特勒，纳粹的主要出处，极大多都是靠着网络一些**营销号和一些**历史虚无主义者的**语录，
-        靠着碎片化和美学包装的方式提出部分做法（屠杀犹太人），**好奇了**，
-        和苏联瓜分波兰，给丹麦，法国吞了，和日本结盟，这**怎么说**？
-        网络还能蹦出一些**离谱谣言**（希特勒不攻击中国出于对中国喜爱）
-        这**是人说出来的**？
+        崇拜的大多原因一群人崇拜希特勒，纳粹的主要出处，
+        多靠网络一些**营销号和一些**历史虚无主义者的**语录。
       </p>
-      <h3>2. 这群猴子的表现</h3>
-      <p><strong>班级里</strong></p>
-      <p>
-        1. 敬纳粹礼<br>
-        2. 高喊希特勒名字<br>
-        3. 鼓吹希特勒<br>
-        4. 谈到希特勒就真把这当领袖了，不允许任何人“侮辱”
-      </p>
-      <p><strong>一些特殊时间与场所做的事情</strong></p>
-      <p>
-        9.3阅兵在抗日战争暨世界反法西斯纪念日举行，8.20班能有****，****，
-        **的**带个十字勋章，下课在那班外站着，刻意露出，遇到人就可以讲解，
-        还敬他***礼，我只能来评价: **玩意，
-        希特勒是你老*啊，*你老*的
-      </p>
+    `
+  },
+  {
+    id: 6,
+    title: "我的绘画",
+    date: "2026-01-04",
+    content: `
+      <p>这是我的第一张绘画，如何呢？</p>
+
+      <img 
+        src="https://raw.githubusercontent.com/zuqiu2024/jack/main/first.jpg"
+        alt="我的绘画"
+        style="max-width:100%;border-radius:12px;margin:1.5rem 0;"
+      >
     `
   }
 ];
 
-// 生成完整HTML
+// 生成完整 HTML
 function generateHTML(title, bodyContent) {
   return `
 <!DOCTYPE html>
@@ -139,7 +125,7 @@ function generateHomePage() {
   return generateHTML("首页", list);
 }
 
-// 单篇文章（增加 Giscus 评论）
+// 单篇文章（含评论区）
 function generatePostPage(id) {
   const post = blogPosts.find(p => p.id === id);
   if (!post) {
@@ -155,7 +141,6 @@ function generatePostPage(id) {
       <a class="back-link" href="/">← 返回首页</a>
     </article>
 
-    <!-- 评论区 -->
     <div style="margin-top:3rem;">
       <script src="https://giscus.app/client.js"
         data-repo="zuqiu2024/jack"
@@ -172,8 +157,7 @@ function generatePostPage(id) {
         crossorigin="anonymous"
         async>
       </script>
-    </div>
-    `
+    </div>`
   );
 }
 
