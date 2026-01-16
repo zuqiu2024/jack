@@ -70,6 +70,23 @@ const blogPosts = [
   }
 ];
 
+// 从HTML内容中提取纯文本摘要
+function getExcerpt(content, maxLength = 150) {
+  // 首先移除所有图片标签
+  const withoutImages = content.replace(/<img[^>]*>/g, '');
+  
+  // 然后提取纯文本
+  const plainText = withoutImages
+    .replace(/<[^>]*>/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  
+  // 截取指定长度
+  return plainText.length > maxLength 
+    ? plainText.substring(0, maxLength) + '...' 
+    : plainText;
+}
+
 // 生成完整的HTML页面框架
 function generateHTML(title, bodyContent) {
   return `
@@ -146,6 +163,7 @@ function generateHTML(title, bodyContent) {
         }
         .post-content {
             margin-top: 1rem;
+            color: #555;
         }
         .post-content h2, .post-content h3 {
             margin: 1.5rem 0 1rem;
@@ -208,7 +226,7 @@ function generateHomePage() {
       <a href="/post/${post.id}" class="post-title">${post.title}</a>
       <div class="post-date">发布于 ${post.date}</div>
       <div class="post-content">
-        ${post.content.substring(0, 150)}${post.content.length > 150 ? '...' : ''}
+        ${getExcerpt(post.content)}
       </div>
       <a href="/post/${post.id}" class="back-link">阅读全文 →</a>
     </article>
