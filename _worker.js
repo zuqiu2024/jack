@@ -18,6 +18,24 @@ const blogPosts = [
         <li><strong>本网站编辑者（展）</strong></li>
       </ul>
       <p>我们因缘分相聚，共同书写这段有趣的回忆。</p>
+<!-- 评论区 -->
+<div style="margin-top:3rem;">
+  <script src="https://giscus.app/client.js"
+    data-repo="zuqiu2024/jack"
+    data-repo-id="R_kgDOQy0W2A"
+    data-category="General"
+    data-category-id="DIC_kwDOQy0W2M4C0ha1"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="1"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+</div>
     `
   },
   {
