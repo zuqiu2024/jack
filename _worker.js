@@ -82,7 +82,25 @@ const blogPosts = [
           onerror="this.style.display='none'"
         >
         <p style="color: #666; font-size: 0.9em; margin-top: 10px;">帅哥的面目</p>
-  `
+   <div style>="text-align: center; margin: 20px 0;">
+        <img
+
+src="https://raw.githubusercontent.com/zuqiu2024/jack/main/second.jpg"
+        alt="没有任何区别"
+        style="max-width: 100%;
+height: auto; border-rabius: 8px;
+box-shadow: 0 2px 10px
+rgba(0,0,0,0.1);"
+
+onerror="this.style.display="none"
+        >
+        <p style="color: #666;
+font-size: 0.9em; margin-top:
+10px;">没有任何区别</p>
+   <div style>="text-align: center;
+margin: 20px 0;">
+        <img
+'
   }
 ];
 
