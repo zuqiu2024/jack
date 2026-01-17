@@ -62,7 +62,7 @@ const blogPosts = [
     content: `
       <p>这是我的第一张绘画，如何呢？</p>
       <img 
-        src="https://raw.githubusercontent.com/zuqiu2024/jack/main/first.jpg"
+        src="https://raw.githubusercontent.com/zuqiu2024/jack/main/IMG_20260117_160510.jpg"
         alt="我的绘画"
         style="max-width:100%;border-radius:12px;margin:1.5rem 0;"
       >
