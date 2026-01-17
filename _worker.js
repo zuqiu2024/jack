@@ -100,7 +100,7 @@ font-size: 0.9em; margin-top:
    <div style>="text-align: center;
 margin: 20px 0;">
         <img
-'
+    `
   }
 ];
 
