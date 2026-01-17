@@ -67,6 +67,22 @@ const blogPosts = [
         style="max-width:100%;border-radius:12px;margin:1.5rem 0;"
       >
     `
+  }, 
+  {
+   id:6,
+   title:"帅哥照",
+   date:"2026-1-17",
+   content:`
+   <p>我们不得不承认，真正的帅哥仅存在八一班，而且是全校唯一，接下来给你展示一下。</p>
+   <div style="text-align: center; margin: 20px 0;">
+        <img 
+          src="https://raw.githubusercontent.com/zuqiu2024/jack/main/Screenshot_20260117_144214.jpg" 
+          alt="帅哥的面目" 
+          style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"
+          onerror="this.style.display='none'"
+        >
+        <p style="color: #666; font-size: 0.9em; margin-top: 10px;">帅哥的面目</p>
+  `
   }
 ];
 
