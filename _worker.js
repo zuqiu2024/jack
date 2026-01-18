@@ -128,10 +128,10 @@ const blogPosts = [
           style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);"
           poster="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMGaWxpHFslv_ywvOG8YlrINv20DqgAAu8OaxviEmhXsqr39wrc4_EBAAMCAAN5AAM4BA.jpg"
         >
-          <source src="https://zhanxx81201.dpdns.org/file/BAACAgUAAyEGAATXRHq-AAMIaWxs61sj2WdWVNt5EGrMzqsrEz0AAjEcAALiEmhX2wMTu2KL9us4BA.mp4" type="video/mp4">
+          <source src="https://raw.githubusercontent.com/zuqiu2024/jack/main/lv_0_20260118134445.mp4" type="video/mp4">
           您的浏览器不支持 HTML5 视频标签，请直接查看 <a href="https://zhanxx81201.dpdns.org/file/BAACAgUAAyEGAATXRHq-AAMIaWxs61sj2WdWVNt5EGrMzqsrEz0AAjEcAALiEmhX2wMTu2KL9us4BA.mp4">视频文件</a>。
         </video>
-        <p style="color: #888; font-size: 0.9em; margin-top: 10px;">话说这网址能用吗。</p>
+        <p style="color: #888; font-size: 0.9em; margin-top: 10px;">太正义了，爱来自河的南边。</p>
       </div>
     `
   },
