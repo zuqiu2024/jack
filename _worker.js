@@ -134,6 +134,7 @@ content: `
         <p style="color: #888; font-size: 0.9em; margin-top: 10px;">这是我绘画过程的简短记录。</p>
       </div>
     `
+},
 ];
 
 // 从HTML内容中提取纯文本摘要
