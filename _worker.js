@@ -115,25 +115,25 @@ const blogPosts = [
   `
 }
 {
-id: 6,
-title: "正义执行这一块",
-date: "2026-1-18",
-content: `
-  <p>任何邪恶终将绳之以法。</p>
+  id: 6,
+  title: "正义执行这一块",
+  date: "2026-1-18",
+  content: `
+    <p>任何邪恶终将绳之以法。</p>
 
-   <!-- 视频部分 -->
-      <div style="text-align: center; margin: 30px 0;">
-        <video 
-          controls 
-          style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);"
-          poster="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMGaWxpHFslv_ywvOG8YlrINv20DqgAAu8OaxviEmhXsqr39wrc4_EBAAMCAAN5AAM4BA.jpg"
-        >
-          <source src="https://zhanxx81201.dpdns.org/file/BAACAgUAAyEGAATXRHq-AAMIaWxs61sj2WdWVNt5EGrMzqsrEz0AAjEcAALiEmhX2wMTu2KL9us4BA.mp4" type="video/mp4">
-          您的浏览器不支持 HTML5 视频标签，请直接查看 <a href="https://raw.githubusercontent.com/zuqiu2024/jack/main/my_painting_video.mp4">视频文件</a>。
-        </video>
-        <p style="color: #888; font-size: 0.9em; margin-top: 10px;">这是我绘画过程的简短记录。</p>
-      </div>
-    `
+    <!-- 视频部分 -->
+    <div style="text-align: center; margin: 30px 0;">
+      <video 
+        controls 
+        style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);"
+        poster="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMGaWxpHFslv_ywvOG8YlrINv20DqgAAu8OaxviEmhXsqr39wrc4_EBAAMCAAN5AAM4BA.jpg"
+      >
+        <source src="https://zhanxx81201.dpdns.org/file/BAACAgUAAyEGAATXRHq-AAMIaWxs61sj2WdWVNt5EGrMzqsrEz0AAjEcAALiEmhX2wMTu2KL9us4BA.mp4" type="video/mp4">
+        您的浏览器不支持 HTML5 视频标签，请直接查看 <a href="https://zhanxx81201.dpdns.org/file/BAACAgUAAyEGAATXRHq-AAMIaWxs61sj2WdWVNt5EGrMzqsrEz0AAjEcAALiEmhX2wMTu2KL9us4BA.mp4">视频文件</a>。
+      </video>
+      <p style="color: #888; font-size: 0.9em; margin-top: 10px;">正义，虽迟但到。</p>
+    </div>
+  `
 },
 ];
 
