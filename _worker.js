@@ -113,7 +113,7 @@ const blogPosts = [
         <p style="color: #666; font-size: 0.9em; margin-top: 10px;">没有任何区别</p>
       </div>
     `
-  }, // <-- 已修复：这里添加了缺失的逗号
+  }, 
   {
     id: 6,
     title: "正义执行这一块",
@@ -131,7 +131,7 @@ const blogPosts = [
           <source src="https://zhanxx81201.dpdns.org/file/BAACAgUAAyEGAATXRHq-AAMIaWxs61sj2WdWVNt5EGrMzqsrEz0AAjEcAALiEmhX2wMTu2KL9us4BA.mp4" type="video/mp4">
           您的浏览器不支持 HTML5 视频标签，请直接查看 <a href="https://zhanxx81201.dpdns.org/file/BAACAgUAAyEGAATXRHq-AAMIaWxs61sj2WdWVNt5EGrMzqsrEz0AAjEcAALiEmhX2wMTu2KL9us4BA.mp4">视频文件</a>。
         </video>
-        <p style="color: #888; font-size: 0.9em; margin-top: 10px;">正义，虽迟但到。</p>
+        <p style="color: #888; font-size: 0.9em; margin-top: 10px;">话说这网址能用吗。</p>
       </div>
     `
   },
@@ -325,7 +325,7 @@ function generateHomePage() {
     <!-- 图片加载提示框 -->
     <div class="loading-notice">
       <strong>📷 图片加载提示</strong>
-      <p>部分文章的图片托管于外部服务器，加载可能需要一些时间，请您耐心等待。我们正在努力优化体验。</p>
+      <p>文章的图片和视频托管于外部服务器，加载可能需要一些时间，我有没法，耐心等待吧。</p>
     </div>
     <h2 style="margin-bottom: 1.5rem;">最新文章</h2>
     <div class="post-list">${postListItems}</div>
