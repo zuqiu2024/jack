@@ -322,10 +322,10 @@ function generateHomePage() {
   return generateHTML(
     "首页",
     `
-    <!-- 图片加载提示框 -->
+    <!-- 视频图片加载提示框 -->
     <div class="loading-notice">
       <strong>📷 图片加载提示</strong>
-      <p>文章的图片和视频托管于外部服务器，加载可能需要一些时间，我有没法，耐心等待吧。</p>
+      <p>文章的图片和视频托管于外部服务器，加载可能需要一些时间，我也没法，耐心等待吧。</p>
     </div>
     <h2 style="margin-bottom: 1.5rem;">最新文章</h2>
     <div class="post-list">${postListItems}</div>
