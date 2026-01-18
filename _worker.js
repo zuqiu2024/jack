@@ -106,7 +106,7 @@ const blogPosts = [
     <!-- 第二张图片 -->
     <div style="text-align: center; margin: 20px 0;">
       <img 
-        src="https://raw.githubusercontent.com/zuqiu2024/jack/main/second.jpg" 
+        src="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMFaWxT8BiEa2Wc1iCBiuSTXf0GQmIAAsMOaxviEmhXshlMnC-PwZIBAAMCAAN5AAM4BA.jpg" 
         alt="没有任何区别" 
         style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"
       >
