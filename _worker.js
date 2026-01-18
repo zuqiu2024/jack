@@ -96,7 +96,7 @@ const blogPosts = [
     <!-- 第一张图片 -->
     <div style="text-align: center; margin: 20px 0;">
       <img 
-        src="https://raw.githubusercontent.com/zuqiu2024/jack/main/Screenshot_20260117_144214.jpg" 
+        src="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMDaWxReBiCO1Rwj4SDhKKhkn98zo4AAr4OaxviEmhXCHcXAAFyfNeaAQADAgADeAADOAQ.jpg" 
         alt="帅哥的面目" 
         style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"
       >
