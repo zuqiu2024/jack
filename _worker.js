@@ -87,54 +87,54 @@ const blogPosts = [
     `
   }, 
   {
-  id: 5,
-  title: "帅哥照",
-  date: "2026-1-17",
-  content: `
-    <p>我们不得不承认，真正的帅哥仅存在八一班，而且是全校唯一，接下来给你展示一下。</p>
+    id: 5,
+    title: "帅哥照",
+    date: "2026-1-17",
+    content: `
+      <p>我们不得不承认，真正的帅哥仅存在八一班，而且是全校唯一，接下来给你展示一下。</p>
 
-    <!-- 第一张图片 -->
-    <div style="text-align: center; margin: 20px 0;">
-      <img 
-        src="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMDaWxReBiCO1Rwj4SDhKKhkn98zo4AAr4OaxviEmhXCHcXAAFyfNeaAQADAgADeAADOAQ.jpg" 
-        alt="帅哥的面目" 
-        style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"
-      >
-      <p style="color: #666; font-size: 0.9em; margin-top: 10px;">帅哥的面目</p>
-    </div>
+      <!-- 第一张图片 -->
+      <div style="text-align: center; margin: 20px 0;">
+        <img 
+          src="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMDaWxReBiCO1Rwj4SDhKKhkn98zo4AAr4OaxviEmhXCHcXAAFyfNeaAQADAgADeAADOAQ.jpg" 
+          alt="帅哥的面目" 
+          style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"
+        >
+        <p style="color: #666; font-size: 0.9em; margin-top: 10px;">帅哥的面目</p>
+      </div>
 
-    <!-- 第二张图片 -->
-    <div style="text-align: center; margin: 20px 0;">
-      <img 
-        src="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMFaWxT8BiEa2Wc1iCBiuSTXf0GQmIAAsMOaxviEmhXshlMnC-PwZIBAAMCAAN5AAM4BA.jpg" 
-        alt="没有任何区别" 
-        style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"
-      >
-      <p style="color: #666; font-size: 0.9em; margin-top: 10px;">没有任何区别</p>
-    </div>
-  `
-}
-{
-  id: 6,
-  title: "正义执行这一块",
-  date: "2026-1-18",
-  content: `
-    <p>任何邪恶终将绳之以法。</p>
+      <!-- 第二张图片 -->
+      <div style="text-align: center; margin: 20px 0;">
+        <img 
+          src="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMFaWxT8BiEa2Wc1iCBiuSTXf0GQmIAAsMOaxviEmhXshlMnC-PwZIBAAMCAAN5AAM4BA.jpg" 
+          alt="没有任何区别" 
+          style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"
+        >
+        <p style="color: #666; font-size: 0.9em; margin-top: 10px;">没有任何区别</p>
+      </div>
+    `
+  }, // <-- 已修复：这里添加了缺失的逗号
+  {
+    id: 6,
+    title: "正义执行这一块",
+    date: "2026-1-18",
+    content: `
+      <p>任何邪恶终将绳之以法。</p>
 
-    <!-- 视频部分 -->
-    <div style="text-align: center; margin: 30px 0;">
-      <video 
-        controls 
-        style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);"
-        poster="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMGaWxpHFslv_ywvOG8YlrINv20DqgAAu8OaxviEmhXsqr39wrc4_EBAAMCAAN5AAM4BA.jpg"
-      >
-        <source src="https://zhanxx81201.dpdns.org/file/BAACAgUAAyEGAATXRHq-AAMIaWxs61sj2WdWVNt5EGrMzqsrEz0AAjEcAALiEmhX2wMTu2KL9us4BA.mp4" type="video/mp4">
-        您的浏览器不支持 HTML5 视频标签，请直接查看 <a href="https://zhanxx81201.dpdns.org/file/BAACAgUAAyEGAATXRHq-AAMIaWxs61sj2WdWVNt5EGrMzqsrEz0AAjEcAALiEmhX2wMTu2KL9us4BA.mp4">视频文件</a>。
-      </video>
-      <p style="color: #888; font-size: 0.9em; margin-top: 10px;">正义，虽迟但到。</p>
-    </div>
-  `
-},
+      <!-- 视频部分 -->
+      <div style="text-align: center; margin: 30px 0;">
+        <video 
+          controls 
+          style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);"
+          poster="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMGaWxpHFslv_ywvOG8YlrINv20DqgAAu8OaxviEmhXsqr39wrc4_EBAAMCAAN5AAM4BA.jpg"
+        >
+          <source src="https://zhanxx81201.dpdns.org/file/BAACAgUAAyEGAATXRHq-AAMIaWxs61sj2WdWVNt5EGrMzqsrEz0AAjEcAALiEmhX2wMTu2KL9us4BA.mp4" type="video/mp4">
+          您的浏览器不支持 HTML5 视频标签，请直接查看 <a href="https://zhanxx81201.dpdns.org/file/BAACAgUAAyEGAATXRHq-AAMIaWxs61sj2WdWVNt5EGrMzqsrEz0AAjEcAALiEmhX2wMTu2KL9us4BA.mp4">视频文件</a>。
+        </video>
+        <p style="color: #888; font-size: 0.9em; margin-top: 10px;">正义，虽迟但到。</p>
+      </div>
+    `
+  },
 ];
 
 // 从HTML内容中提取纯文本摘要
@@ -246,6 +246,26 @@ function generateHTML(title, bodyContent) {
             border-radius: 4px;
             font-family: 'SFMono-Regular', Consolas, monospace;
         }
+        /* 图片加载提示框样式 */
+        .loading-notice {
+            background-color: #fff8e6;
+            border-left: 4px solid #ffc107;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 0 auto 30px auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .loading-notice strong {
+            color: #e6a700;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+        .loading-notice p {
+            color: #666;
+            margin: 0;
+            line-height: 1.6;
+        }
         footer {
             text-align: center;
             margin: 3rem 0;
@@ -301,7 +321,15 @@ function generateHomePage() {
 
   return generateHTML(
     "首页",
-    `<h2 style="margin-bottom: 1.5rem;">最新文章</h2><div class="post-list">${postListItems}</div>`
+    `
+    <!-- 图片加载提示框 -->
+    <div class="loading-notice">
+      <strong>📷 图片加载提示</strong>
+      <p>部分文章的图片托管于外部服务器，加载可能需要一些时间，请您耐心等待。我们正在努力优化体验。</p>
+    </div>
+    <h2 style="margin-bottom: 1.5rem;">最新文章</h2>
+    <div class="post-list">${postListItems}</div>
+    `
   );
 }
 
