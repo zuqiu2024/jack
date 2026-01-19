@@ -1,380 +1,234 @@
 // blog_worker.js
-// 博客的所有文章数据
+
+// ================== 博客文章数据 ==================
 const blogPosts = [
+
+  // ===== 免费赛事示例 =====
   {
     id: 1,
-    title: "201八人集体介绍",
-    date: "2025-12-31",
+    title: "免费赛事｜经典友谊赛回顾",
+    date: "2026-01-10",
     content: `
-      <p>201八人集体于2024年组成，是一个充满活力的团体。成员包括：</p>
-      <ul>
-        <li><strong>宿舍彭于晏（鸡头）</strong></li>
-        <li><strong>鲜榨柠檬汁（柠檬）</strong></li>
-        <li><strong>58（王志轩）</strong></li>
-        <li><strong>把鸡头当儿子训（董佳耀）</strong></li>
-        <li><strong>卷王（坤哥）</strong></li>
-        <li><strong>阿牛（牛国举）</strong></li>
-        <li><strong>大胖（自己猜）</strong></li>
-        <li><strong>本网站编辑者（展）</strong></li>
-      </ul>
-      <p>我们因缘分相聚，共同书写这段有趣的回忆。</p>
-<!-- 评论区 -->
-<div style="margin-top:3rem;">
-  <script src="https://giscus.app/client.js"
-    data-repo="zuqiu2024/jack"
-    data-repo-id="R_kgDOQy0W2A"
-    data-category="General"
-    data-category-id="DIC_kwDOQy0W2M4C0ha1"
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="1"
-    data-input-position="bottom"
-    data-theme="light"
-    data-lang="zh-CN"
-    crossorigin="anonymous"
-    async>
-  </script>
-</div>
+      <h2>经典友谊赛回顾</h2>
+
+      <p>本场比赛为免费赛事，供球迷交流观看。</p>
+
+      <img src="这里换成你的图片URL"
+        style="max-width:100%;border-radius:10px;margin:10px 0;">
+
+      <p>比赛节奏紧凑，场面精彩。</p>
+
+      <h3>📁 视频观看</h3>
+      <a href="你的免费网盘链接" target="_blank">
+        点击前往观看
+      </a>
+
+      ${commentBlock()}
     `
   },
+
+  // ===== 付费赛事示例（方案A） =====
   {
     id: 2,
-    title: "祝你2026快乐",
-    date: "2026-01-01",
+    title: "付费赛事｜焦点大战完整版",
+    date: "2026-01-11",
     content: `
-    <p>2025年已经翻篇了，2026还已来，以下是我对学校幻想。</p>
-    <h3>1. 足球场上球门的稀缺性</h3>
-    <p>首先，我想探讨一个哲学问题：<strong>没有球门的足球场，还能叫足球场吗？</strong></p>
-    <p>我不知道是不是咱们学校足球有某种我尚未领悟的特殊规则——球员的终极目标该不会只是<em>带球</em>，而不需要<em>打门</em>吧？这极大地颠覆了我的认知。</p>
-    <p>那么问题来了：门将站哪？球员射哪？总不能对着空气练习"无实物射门"表演吧。</p>
-    <h3>2. 对羽毛球的改善</h3>
-    <p>其次，让我们把目光投向东操场。<strong>东操场的羽毛球位能不能加个网？</strong></p>
-    <p>没网玩个蛋啊！这就好比打篮球没有篮筐，纯属隔空意念运动。现在一群人在教学区的空地上打球，我本来不想说啥，六或七个也就算了。但当一群人挤在那儿挥拍，路怎么走？</p>
-    <p>说真的，老子的头都差点<code>cos</code>羽毛球了。</p>
-    <h3>3. 微机房的虚构</h3>
-    <p>最后，让我们谈谈现实与虚构。<strong>就说现在都有多少人还不会用电脑处理正经事？</strong></p>
-    <p>电脑室（机房）这个建筑，它是真实存在的，我亲眼见过。但"电脑课"这门课程，它仿佛只存在于校园传说里。</p>
-    <p>有了机房，来个电脑课能咋？看看班里一些不会电脑的嘉豪装成啥了</p>
-    <hr>
-    <p><i>以上是一个学生对2026年的幻想。能实现那么一两条算我输。</i></p>
-  `
-  },
-  {
-    id: 3,
-    title: "为人寻偶",
-    date: "2026-01-02",
-    content: `
-    <h3>【在青春主场，寻找一位并肩奔跑的你】</h3>
-    <p>你好！我是一名八年级的周沐恩，也许在人群中并不算最高，但站在球场上时，我相信自己有着不输给任何人的专注与热情。身高是标准的"中场发动机"型，够灵活，也够稳妥——抢断、传球、上篮，我享受和队友一起奔跑、配合的每一刻。如果你也喜欢篮球，欢迎来球场看看，或许我们可以来一场轻松的配合；如果你对运动不太熟悉，那我也可以和你分享球场上的趣事，或是教你投出第一个三分球。</p>
-    <p>球场下的我，朋友们常说是"值得交的类型"。性格比较直爽，乐于分享——无论是零食、笔记，还是下雨天唯一的一把伞。朋友遇到麻烦时，我习惯站出来帮忙，毕竟在我看来，人与人之间的真诚和义气，远比计较得失更重要。虽然偶尔会因为心直口快说错话，但始终愿意用行动去弥补、去证明。</p>
-    <p>我希望遇见这样的你：开朗爱笑，对生活怀有好奇，愿意尝试新事物。我们可以一起在课后讨论难题，在周末约图书馆或操场；你可以是安静的倾听者，也可以是活力满满的组织者。重要的是，彼此能坦诚相待，互相鼓励，在有些迷茫又充满可能的年纪里，成为照亮对方前行的一缕阳光。</p>
-    <p>如果你觉得，和一个爱打球、重义气、愿意把朋友放在心上的人做朋友（或者更进一步）听起来不赖，请给我一个简单的信号。我们可以从一次课间的招呼，或是一句"明天球场见"开始。</p>
-    <p>期待相遇，不负青春。</p>
+      <h2>焦点大战 · 完整回放</h2>
+
+      <p>本场比赛为高清完整版回放，需付费获取。</p>
+
+      <img src="这里放比赛图片URL"
+        style="max-width:100%;border-radius:10px;margin:10px 0;">
+
+      <hr>
+
+      <h3>💰 获取方式（方案 A）</h3>
+
+      <img src="这里放你的付款码图片URL"
+        style="max-width:240px;border-radius:10px;">
+
+      <p style="margin-top:15px;font-weight:bold;">
+        请把付款截图放不到邮箱：<br>
+        zhanxuxiang2022@163.com
+      </p>
+
+      <p>
+        我就告诉你视频网盘链接
+      </p>
+
+      ${commentBlock()}
     `
   },
-  {
-    id: 4,
-    title: "我的第一张绘画",
-    date: "2026-01-16",
-    content: `
-      <p>这是我的第一张绘画，如何呢？</p>
-      <img 
-        src="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMEaWxSI-RuxPpXpGnBNQmpukLhxi8AAr8OaxviEmhXtwxrp8VlcnsBAAMCAAN3AAM4BA.jpg"
-        alt="我的绘画"
-        style="max-width:100%;border-radius:12px;margin:1.5rem 0;"
-      >
-    `
-  }, 
-  {
-    id: 5,
-    title: "帅哥照",
-    date: "2026-1-17",
-    content: `
-      <p>我们不得不承认，真正的帅哥仅存在八一班，而且是全校唯一，接下来给你展示一下。</p>
 
-      <!-- 第一张图片 -->
-      <div style="text-align: center; margin: 20px 0;">
-        <img 
-          src="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMDaWxReBiCO1Rwj4SDhKKhkn98zo4AAr4OaxviEmhXCHcXAAFyfNeaAQADAgADeAADOAQ.jpg" 
-          alt="帅哥的面目" 
-          style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"
-        >
-        <p style="color: #666; font-size: 0.9em; margin-top: 10px;">帅哥的面目</p>
-      </div>
-
-      <!-- 第二张图片 -->
-      <div style="text-align: center; margin: 20px 0;">
-        <img 
-          src="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMFaWxT8BiEa2Wc1iCBiuSTXf0GQmIAAsMOaxviEmhXshlMnC-PwZIBAAMCAAN5AAM4BA.jpg" 
-          alt="没有任何区别" 
-          style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"
-        >
-        <p style="color: #666; font-size: 0.9em; margin-top: 10px;">没有任何区别</p>
-      </div>
-    `
-  }, 
+  // ===== 02 世界杯 · 中国队 =====
   {
-    id: 6,
-    title: "正义执行这一块",
-    date: "2026-1-18",
+    id: 201,
+    title: "02世界杯｜中国 vs 巴西",
+    date: "2002-06-08",
     content: `
-      <p>任何邪恶终将绳之以法。</p>
+      <h2>中国 vs 巴西</h2>
 
-      <!-- 视频部分 -->
-      <div style="text-align: center; margin: 30px 0;">
-        <video 
-          controls 
-          style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);"
-          poster="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMGaWxpHFslv_ywvOG8YlrINv20DqgAAu8OaxviEmhXsqr39wrc4_EBAAMCAAN5AAM4BA.jpg"
-        >
-          <source src="https://raw.githubusercontent.com/zuqiu2024/jack/main/lv_0_20260118134445.mp4" type="video/mp4">
-          您的浏览器不支持 HTML5 视频标签，请直接查看 <a href="https://zhanxx81201.dpdns.org/file/BAACAgUAAyEGAATXRHq-AAMIaWxs61sj2WdWVNt5EGrMzqsrEz0AAjEcAALiEmhX2wMTu2KL9us4BA.mp4">视频文件</a>。
-        </video>
-        <p style="color: #888; font-size: 0.9em; margin-top: 10px;">太正义了，爱来自河的南边。</p>
-      </div>
+      <p>
+        2002 年韩日世界杯，中国队对阵世界冠军巴西队。
+      </p>
+
+      <img src="这里换成比赛图片URL"
+        style="max-width:100%;border-radius:10px;margin:10px 0;">
+
+      <hr>
+
+      <h3>💰 回放获取（付费）</h3>
+
+      <img src="这里放你的付款码图片URL"
+        style="max-width:240px;border-radius:10px;">
+
+      <p style="margin-top:15px;font-weight:bold;">
+        请把付款截图放不到邮箱：<br>
+        zhanxuxiang2022@163.com
+      </p>
+
+      <p>
+        我就告诉你视频网盘链接
+      </p>
+
+      ${commentBlock()}
     `
-  },
+  }
+
 ];
 
-// 从HTML内容中提取纯文本摘要
-function getExcerpt(content, maxLength = 150) {
-  // 首先移除所有图片标签
-  const withoutImages = content.replace(/<img[^>]*>/g, '');
-  
-  // 然后提取纯文本
-  const plainText = withoutImages
-    .replace(/<[^>]*>/g, '')
-    .replace(/\s+/g, ' ')
-    .trim();
-  
-  // 截取指定长度
-  return plainText.length > maxLength 
-    ? plainText.substring(0, maxLength) + '...' 
-    : plainText;
+// ================== 评论区函数 ==================
+function commentBlock() {
+  return `
+  <div style="margin-top:3rem;">
+    <script src="https://giscus.app/client.js"
+      data-repo="zuqiu2024/jack"
+      data-repo-id="R_kgDOQy0W2A"
+      data-category="General"
+      data-category-id="DIC_kwDOQy0W2M4C0ha1"
+      data-mapping="pathname"
+      data-theme="light"
+      data-lang="zh-CN"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </div>
+  `;
 }
 
-// 生成完整的HTML页面框架
-function generateHTML(title, bodyContent) {
+// ================== HTML 模板 ==================
+function generateHTML(title, body) {
   return `
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${title} | 展的个人博客</title>
-    <style>
-        :root {
-            --primary-color: #2563eb;
-            --text-color: #333;
-            --bg-color: #f9fafb;
-            --card-bg: #ffffff;
-            --border-color: #e5e7eb;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
-            line-height: 1.7;
-            color: var(--text-color);
-            background: var(--bg-color);
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        header {
-            border-bottom: 2px solid var(--border-color);
-            padding: 2rem 0;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-        .blog-title {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-        .blog-subtitle {
-            color: #666;
-            font-weight: normal;
-        }
-        nav a {
-            color: var(--primary-color);
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: 500;
-        }
-        .post-list {
-            list-style: none;
-        }
-        .post-item {
-            background: var(--card-bg);
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border: 1px solid var(--border-color);
-            transition: box-shadow 0.3s;
-        }
-        .post-item:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-        .post-title {
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-            text-decoration: none;
-            display: block;
-        }
-        .post-date {
-            color: #888;
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-        .post-content {
-            margin-top: 1rem;
-            color: #555;
-        }
-        .post-content h2, .post-content h3 {
-            margin: 1.5rem 0 1rem;
-            color: var(--text-color);
-        }
-        .post-content ul, .post-content ol {
-            padding-left: 1.5rem;
-            margin: 1rem 0;
-        }
-        .post-content code {
-            background: #f1f5f9;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: 'SFMono-Regular', Consolas, monospace;
-        }
-        /* 图片加载提示框样式 */
-        .loading-notice {
-            background-color: #fff8e6;
-            border-left: 4px solid #ffc107;
-            border-radius: 8px;
-            padding: 16px 20px;
-            margin: 0 auto 30px auto;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-        .loading-notice strong {
-            color: #e6a700;
-            display: block;
-            margin-bottom: 8px;
-            font-size: 1.05em;
-        }
-        .loading-notice p {
-            color: #666;
-            margin: 0;
-            line-height: 1.6;
-        }
-        footer {
-            text-align: center;
-            margin: 3rem 0;
-            color: #888;
-            font-size: 0.9rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border-color);
-        }
-        .back-link {
-            display: inline-block;
-            margin-top: 1.5rem;
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 500;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${title} | 足球风光</title>
+<style>
+body{font-family:sans-serif;max-width:900px;margin:auto;padding:20px}
+.post-item{border:1px solid #ddd;padding:20px;margin-bottom:20px;border-radius:12px}
+.post-title{font-size:1.4rem;color:#2563eb;text-decoration:none}
+header img{max-width:100%;border-radius:12px;margin:15px 0}
+.back-link{display:inline-block;margin-top:20px}
+</style>
 </head>
 <body>
-    <header>
-        <h1 class="blog-title">展的个人博客</h1>
-        <p class="blog-subtitle">分享乐子、视频与生活</p>
-        <nav>
-            <a href="/">首页</a>
-            <a href="#">关于</a>
-            <a href="#">归档</a>
-        </nav>
-    </header>
-    <main>
-        ${bodyContent}
-    </main>
-    <footer>
-        <p>© 2024 展的个人博客. 由 <a href="https://workers.cloudflare.com" target="_blank">Cloudflare Worker</a> 瞎驱动。</p>
-        <p>文章总数: ${blogPosts.length} 篇 | 最后更新: ${new Date().toLocaleDateString('zh-CN')}</p>
-    </footer>
+
+<header>
+  <h1>足球风光</h1>
+
+  <!-- 这里放首页顶部图片 -->
+  <img src="这里换成你的首页图片URL">
+
+  <nav>
+    <a href="/">首页</a> |
+    <a href="/worldcup-2002">02韩日世界杯</a>
+  </nav>
+</header>
+
+<main>
+${body}
+</main>
+
+<footer>
+  <p>© 足球风光</p>
+</footer>
+
 </body>
 </html>
-  `;
+`;
 }
 
-// 生成文章列表页的HTML内容
+// ================== 首页 ==================
 function generateHomePage() {
-  const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
-  const postListItems = sortedPosts.map(post => `
+  const list = blogPosts.map(p => `
     <article class="post-item">
-      <a href="/post/${post.id}" class="post-title">${post.title}</a>
-      <div class="post-date">发布于 ${post.date}</div>
-      <div class="post-content">
-        ${getExcerpt(post.content)}
-      </div>
-      <a href="/post/${post.id}" class="back-link">阅读全文 →</a>
+      <a class="post-title" href="/post/${p.id}">${p.title}</a>
+      <div>${p.date}</div>
     </article>
-  `).join('');
+  `).join("");
 
-  return generateHTML(
-    "首页",
-    `
-    <!-- 视频图片加载提示框 -->
-    <div class="loading-notice">
-      <strong>📷 图片加载提示</strong>
-      <p>文章的图片和视频托管于外部服务器，加载可能需要一些时间，我也没法，耐心等待吧。</p>
-    </div>
-    <h2 style="margin-bottom: 1.5rem;">最新文章</h2>
-    <div class="post-list">${postListItems}</div>
-    `
-  );
+  return generateHTML("首页", list);
 }
 
-// 生成单篇文章页的HTML内容
-function generatePostPage(postId) {
-  const post = blogPosts.find(p => p.id === postId);
+// ================== 文章页 ==================
+function generatePostPage(id) {
+  const post = blogPosts.find(p => p.id === id);
   if (!post) {
-    return generateHTML(
-      "文章未找到",
-      `<h2>文章未找到</h2><p>抱歉，您要查找的文章不存在。</p><a href="/" class="back-link">← 返回首页</a>`
-    );
+    return generateHTML("未找到", `<p>文章不存在</p>`);
   }
 
   return generateHTML(
     post.title,
     `<article class="post-item">
-       <h2 class="post-title">${post.title}</h2>
-       <div class="post-date">发布于 ${post.date} | 文章 ID: ${post.id}</div>
-       <div class="post-content">${post.content}</div>
-       <a href="/" class="back-link">← 返回首页</a>
-     </article>`
+      ${post.content}
+      <a class="back-link" href="/">← 返回首页</a>
+    </article>`
   );
 }
 
-// Worker 主请求处理逻辑（这是必须的入口点）
+// ================== 专题页 ==================
+function generateWorldCup2002Page() {
+  return generateHTML(
+    "02韩日世界杯 · 中国队",
+    `
+    <article class="post-item">
+      <h2>🇨🇳 02 韩日世界杯 · 中国队</h2>
+      <ul>
+        <li><a href="/post/201">中国 vs 巴西</a></li>
+      </ul>
+      <a class="back-link" href="/">← 返回首页</a>
+    </article>
+    `
+  );
+}
+
+// ================== Worker 入口 ==================
 export default {
-  async fetch(request, env, ctx) {
+  async fetch(request) {
     const url = new URL(request.url);
     const path = url.pathname;
 
-    let responseHTML;
-    if (path === '/') {
-      responseHTML = generateHomePage();
-    } else if (path.startsWith('/post/')) {
-      const postId = parseInt(path.split('/')[2]);
-      responseHTML = isNaN(postId) ? generateHomePage() : generatePostPage(postId);
-    } else {
-      responseHTML = generateHTML(
-        "页面未找到",
-        `<h2>404 - 页面未找到</h2><p>您访问的页面 <code>${path}</code> 不存在。</p><a href="/" class="back-link">← 返回首页</a>`
-      );
+    if (path === "/") {
+      return new Response(generateHomePage(), {
+        headers: { "content-type": "text/html;charset=UTF-8" }
+      });
     }
 
-    return new Response(responseHTML, {
-      headers: { 'content-type': 'text/html;charset=UTF-8' },
-    });
-  },
+    if (path === "/worldcup-2002") {
+      return new Response(generateWorldCup2002Page(), {
+        headers: { "content-type": "text/html;charset=UTF-8" }
+      });
+    }
+
+    if (path.startsWith("/post/")) {
+      const id = parseInt(path.split("/")[2]);
+      return new Response(generatePostPage(id), {
+        headers: { "content-type": "text/html;charset=UTF-8" }
+      });
+    }
+
+    return new Response("404 Not Found", { status: 404 });
+  }
 };
