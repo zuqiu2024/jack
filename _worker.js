@@ -286,7 +286,7 @@ function generateHTML(title, bodyContent) {
 <body>
     <header>
         <h1 class="blog-title">展的个人博客</h1>
-        <p class="blog-subtitle">分享想法、技术与生活</p>
+        <p class="blog-subtitle">分享乐子、视频与生活</p>
         <nav>
             <a href="/">首页</a>
             <a href="#">关于</a>
@@ -297,7 +297,7 @@ function generateHTML(title, bodyContent) {
         ${bodyContent}
     </main>
     <footer>
-        <p>© 2024 展的个人博客. 由 <a href="https://workers.cloudflare.com" target="_blank">Cloudflare Worker</a> 强力驱动。</p>
+        <p>© 2024 展的个人博客. 由 <a href="https://workers.cloudflare.com" target="_blank">Cloudflare Worker</a> 瞎驱动。</p>
         <p>文章总数: ${blogPosts.length} 篇 | 最后更新: ${new Date().toLocaleDateString('zh-CN')}</p>
     </footer>
 </body>
