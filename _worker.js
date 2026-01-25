@@ -80,7 +80,7 @@ const blogPosts = [
     content: `
       <p>这是我的第一张绘画，如何呢？</p>
       <img 
-        src="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMEaWxSI-RuxPpXpGnBNQmpukLhxi8AAr8OaxviEmhXtwxrp8VlcnsBAAMCAAN3AAM4BA.jpg"
+        src="https://zhanxx.de5.net/file/AgACAgUAAyEGAATXRHq-AAMLaXV2vEHYC0OMkt7VKGMuhZhoJ3IAAscMaxu1sLFX2cQ6G-ajrR8BAAMCAAN3AAM4BA.jpg"
         alt="我的绘画"
         style="max-width:100%;border-radius:12px;margin:1.5rem 0;"
       >
