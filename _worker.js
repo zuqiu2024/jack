@@ -96,7 +96,7 @@ const blogPosts = [
       <!-- 第一张图片 -->
       <div style="text-align: center; margin: 20px 0;">
         <img 
-          src="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMDaWxReBiCO1Rwj4SDhKKhkn98zo4AAr4OaxviEmhXCHcXAAFyfNeaAQADAgADeAADOAQ.jpg" 
+          src="https://zhanxx.de5.net/file/AgACAgUAAyEGAATXRHq-AAMDaWxReBiCO1Rwj4SDhKKhkn98zo4AAr4OaxviEmhXCHcXAAFyfNeaAQADAgADeAADOAQ.jpg" 
           alt="帅哥的面目" 
           style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"
         >
@@ -106,7 +106,7 @@ const blogPosts = [
       <!-- 第二张图片 -->
       <div style="text-align: center; margin: 20px 0;">
         <img 
-          src="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMFaWxT8BiEa2Wc1iCBiuSTXf0GQmIAAsMOaxviEmhXshlMnC-PwZIBAAMCAAN5AAM4BA.jpg" 
+          src="https://zhanxx.de5.net/file/AgACAgUAAyEGAATXRHq-AAMFaWxT8BiEa2Wc1iCBiuSTXf0GQmIAAsMOaxviEmhXshlMnC-PwZIBAAMCAAN5AAM4BA.jpg" 
           alt="没有任何区别" 
           style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"
         >
@@ -126,7 +126,7 @@ const blogPosts = [
         <video 
           controls 
           style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);"
-          poster="https://zhanxx81201.dpdns.org/file/AgACAgUAAyEGAATXRHq-AAMGaWxpHFslv_ywvOG8YlrINv20DqgAAu8OaxviEmhXsqr39wrc4_EBAAMCAAN5AAM4BA.jpg"
+          poster="https://zhanxx.de5.net/file/AgACAgUAAyEGAATXRHq-AAMGaWxpHFslv_ywvOG8YlrINv20DqgAAu8OaxviEmhXsqr39wrc4_EBAAMCAAN5AAM4BA.jpg"
         >
           <source src="https://raw.githubusercontent.com/zuqiu2024/jack/main/lv_0_20260118134445.mp4" type="video/mp4">
           您的浏览器不支持 HTML5 视频标签，请直接查看 <a href="https://zhanxx81201.dpdns.org/file/BAACAgUAAyEGAATXRHq-AAMIaWxs61sj2WdWVNt5EGrMzqsrEz0AAjEcAALiEmhX2wMTu2KL9us4BA.mp4">视频文件</a>。
